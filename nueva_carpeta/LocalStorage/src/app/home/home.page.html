@@ -14,7 +14,9 @@
 
     <br><br> <!-- Saltos de línea -->
 
-    <ion-label>{{recovertext}}</ion-label> <!-- Etiqueta para mostrar el texto recuperado de localStorage -->
+    <div id="container">
+      <ion-label class="highlight">{{recovertext}}</ion-label><!-- Etiqueta para mostrar el texto recuperado de localStorage -->
+    </div> 
 
     <br><br> <!-- Saltos de línea -->
 
@@ -40,3 +42,11 @@
   </div>
 
 </ion-content>
+
+<style>
+  .highlight {
+    border: 1px solid #00BFFF; /* Agrega un borde sólido de 1px con el color Celeste */
+    padding: 5px; /* Agrega un poco de espacio dentro del borde para separarlo del texto */
+    background-color: #F0FFFF; /* Establece un color de fondo Celeste claro */
+  }
+</style>
