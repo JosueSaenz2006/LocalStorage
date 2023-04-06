@@ -1,38 +1,47 @@
+/* Estilo para el encabezado */
 ion-header {
+  /* Estilo para el título del encabezado */
   ion-title {
-    text-align: center;
-    font-family: sans-serif;
+    text-align: center; /* Centra el texto del título */
+    font-family: sans-serif; /* Establece la familia de fuente */
   }
 }
 
+/* Estilo para el contenedor */
 #container {
-  text-align: center;
-  margin: 0 auto;
-  width: 80%;
+  text-align: center; /* Centra el contenido del contenedor */
+  margin: 0 auto; /* Establece un margen automático */
+  width: 80%; /* Establece un ancho del 80% del contenedor padre */
 }
 
+/* Estilo para el contenedor (se repite, pero es innecesario) */
 #container {
-  text-align: center;
+  text-align: center; /* Centra el contenido del contenedor */
 }
 
+/* Estilo para el contenido principal */
 ion-content {
-  --background: none;
-  background-image: url('../../assets/nombre-de-tu-imagen.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: moveBackground 30s infinite linear;
+  --background: none; /* Elimina cualquier fondo predeterminado */
+  background-image: url('../../assets/nombre-de-tu-imagen.webp'); /* Establece una imagen de fondo */
+  background-repeat: no-repeat; /* No se repite la imagen de fondo */
+  background-size: cover; /* La imagen de fondo cubre todo el elemento */
+  animation: moveBackground 30s infinite linear; /* Establece una animación de fondo */
 }
 
+/* Animación de la imagen de fondo */
 @keyframes moveBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; } /* Inicia la animación */
+  50% { background-position: 100% 50%; } /* Mueve la imagen a la mitad */
+  100% { background-position: 0% 50%; } /* Vuelve a la posición inicial */
 }
 
+/* Estilo para el botón al pasar el mouse por encima */
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Aumenta el tamaño del botón en un 20% */
 }
 
+/* Estilo para el pie de página */
 ion-footer {
-  --background: transparent;
+  --background: transparent; /* Establece un fondo transparente */
 }
+

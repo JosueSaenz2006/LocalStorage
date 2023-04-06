@@ -1,53 +1,42 @@
-
-<ion-content [fullscreen]="true" class="container"> 
-    <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="container">
+  <!-- Encabezado colapsable -->
+  <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
-        Testing - Add LocalStorage
+        Testing - Add LocalStorage <!-- Título del encabezado -->
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <br><br><br><br>
+  <br><br><br><br> <!-- Saltos de línea -->
 
-  <div id="container">
+  <div id="container"> <!-- Contenedor principal -->
 
-    <br><br>
-      
-      <ion-label>{{recovertext}}</ion-label>
-    
+    <br><br> <!-- Saltos de línea -->
 
-    <br><br>
+    <ion-label>{{recovertext}}</ion-label> <!-- Etiqueta para mostrar el texto recuperado de localStorage -->
 
-    <input type="text"  [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar">
-    <br><br>
-    <button class="my-button" (click)="print()">Enviar</button>
+    <br><br> <!-- Saltos de línea -->
 
-<style>
-  .my-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    font-size: 1.2rem;
-  }
-</style>
+    <input type="text"  [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar"> <!-- Input para ingresar texto a guardar en localStorage -->
+    <br><br> <!-- Saltos de línea -->
 
-    <br><br>
+    <button class="my-button" (click)="print()">Enviar</button> <!-- Botón para guardar el texto en localStorage -->
+ <!-- Estilos en línea -->
+    <style>
+      .my-button {
+        background-color: #007bff; /* Establece el color de fondo del botón */
+        color: #fff; /* Establece el color de texto del botón */
+        border: none; /* Quita el borde del botón */
+        border-radius: 20px; /* Establece el radio de borde del botón */
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Agrega una sombra al botón */
+        padding: 10px 20px; /* Establece el padding del botón */
+        font-size: 1.2rem; /* Establece el tamaño de fuente del botón */
+      }
+    </style>
+
+    <br><br> <!-- Saltos de línea -->
 
   </div>
 
-  
-
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Pie de página</ion-title>
-  </ion-toolbar>
-</ion-footer>
-
-
-
