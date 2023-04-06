@@ -1,0 +1,38 @@
+ion-header {
+  ion-title {
+    text-align: center;
+    font-family: sans-serif;
+  }
+}
+
+#container {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#container {
+  text-align: center;
+}
+
+ion-content {
+  --background: none;
+  background-image: url('../../assets/nombre-de-tu-imagen.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveBackground 30s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+ion-footer {
+  --background: transparent;
+}

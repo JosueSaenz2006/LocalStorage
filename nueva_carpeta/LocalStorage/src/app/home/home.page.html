@@ -1,0 +1,53 @@
+
+<ion-content [fullscreen]="true" class="container"> 
+    <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Testing - Add LocalStorage
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <br><br><br><br>
+
+  <div id="container">
+
+    <br><br>
+      
+      <ion-label>{{recovertext}}</ion-label>
+    
+
+    <br><br>
+
+    <input type="text"  [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar">
+    <br><br>
+    <button class="my-button" (click)="print()">Enviar</button>
+
+<style>
+  .my-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+</style>
+
+    <br><br>
+
+  </div>
+
+  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Pie de página</ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+
