@@ -11,9 +11,20 @@ import { LoaderService } from '../Services/loader.service';
   imports: [IonicModule,FormsModule,ReactiveFormsModule], // Importación de los módulos necesarios para el componente
 })
 export class HomePage {
+  
+  public alertButtons = ['OK'];
 
   receivetext:string; // Variable para almacenar el texto recibido desde el input
   recovertext:string; // Variable para almacenar el texto recuperado del almacenamiento local
+  /**Esta parte del código es el constructor de una clase que utiliza el servicio LoaderService en Angular. 
+   * El constructor tiene dos variables privadas, "loader" y "this". "loader" es una instancia del servicio LoaderService, 
+   * mientras que "this" se refiere a la instancia actual de la clase.
+     Dentro del constructor, se inicializan dos variables de clase, 
+     "receivetext" y "recovertext", ambas asignadas a una cadena vacía. 
+     Estas variables se utilizan probablemente para almacenar datos que se reciben y recuperan en la aplicación, 
+     respectivamente.
+     En resumen, el constructor de esta clase inicializa las variables de clase "receivetext" y "recovertext" y utiliza el servicio LoaderService.
+   */
   constructor(private loader:LoaderService) {
     this.receivetext="";
     this.recovertext="";

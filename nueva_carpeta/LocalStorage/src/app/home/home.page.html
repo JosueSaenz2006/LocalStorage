@@ -1,16 +1,17 @@
 <ion-content [fullscreen]="true" class="container">
   <!-- Encabezado colapsable -->
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar style="background: transparent;">
       <ion-title size="large" style="font-family: sans-serif;">
-        Testing - Add LocalStorage <!-- Título del encabezado -->
+        Local Storage <!-- Título del encabezado -->
       </ion-title>
     </ion-toolbar>
   </ion-header>
+  
 
-  <br><br><br><br> <!-- Saltos de línea -->
+  <br><br><br><br> <br><br>  <!-- Saltos de línea -->
 
-  <div id="container"> <!-- Contenedor principal -->
+  <div id="container"> <!-- Contenedor principal --> <!-- Inicio del Div -->
 
     <br><br> <!-- Saltos de línea -->
 
@@ -20,7 +21,7 @@
 
     <br><br> <!-- Saltos de línea -->
 
-    <input type="text"  [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar"> <!-- Input para ingresar texto a guardar en localStorage -->
+    <input type="text" [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar" class="my-input"> <!-- Input para ingresar texto a guardar en localStorage -->
     <br><br> <!-- Saltos de línea -->
 
     <button class="my-button" (click)="print()">Enviar</button> <!-- Botón para guardar el texto en localStorage -->
@@ -39,8 +40,23 @@
 
     <br><br> <!-- Saltos de línea -->
 
-  </div>
+  </div> <!-- Fin del Div -->
+  
 
+  <div id="container">
+    <br><br><br><br><br><br>
+
+    <ion-button id="present-alert" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="ion-text-center">ir a youtube?</ion-button>
+
+<ion-alert
+  trigger="present-alert"
+  header="Acabaste de ser Rick Roleado"
+  subHeader="Mensaje Importante"
+  message="Que bonita aplicacion no? JAJAJAJ"
+  [buttons]="alertButtons"
+>
+</ion-alert>
+    </div>
 </ion-content>
 
 <style>

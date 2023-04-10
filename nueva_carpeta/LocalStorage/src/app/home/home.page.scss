@@ -6,19 +6,16 @@ ion-header {
     font-family: sans-serif; /* Establece la familia de fuente */
   }
 }
-
 /* Estilo para el contenedor */
 #container {
   text-align: center; /* Centra el contenido del contenedor */
   margin: 0 auto; /* Establece un margen automático */
   width: 80%; /* Establece un ancho del 80% del contenedor padre */
 }
-
 /* Estilo para el contenedor (se repite, pero es innecesario) */
 #container {
   text-align: center; /* Centra el contenido del contenedor */
 }
-
 /* Estilo para el contenido principal */
 ion-content {
   --background: none; /* Elimina cualquier fondo predeterminado */
@@ -27,21 +24,32 @@ ion-content {
   background-size: cover; /* La imagen de fondo cubre todo el elemento */
   animation: moveBackground 30s infinite linear; /* Establece una animación de fondo */
 }
-
 /* Animación de la imagen de fondo */
 @keyframes moveBackground {
   0% { background-position: 0% 50%; } /* Inicia la animación */
   50% { background-position: 100% 50%; } /* Mueve la imagen a la mitad */
   100% { background-position: 0% 50%; } /* Vuelve a la posición inicial */
 }
-
 /* Estilo para el botón al pasar el mouse por encima */
 button:hover {
   transform: scale(1.2); /* Aumenta el tamaño del botón en un 20% */
 }
-
 /* Estilo para el pie de página */
 ion-footer {
   --background: transparent; /* Establece un fondo transparente */
 }
+.my-input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fff;
+}
 
+.my-link {
+  text-decoration: none;
+}
+
+.my-image {
+  width: 100%;
+  height: auto;
+}
