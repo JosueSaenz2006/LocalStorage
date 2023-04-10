@@ -10,13 +10,12 @@ ion-header {
 #container {
   text-align: center; /* Centra el contenido del contenedor */
   margin: 0 auto; /* Establece un margen automático */
-  width: 80%; /* Establece un ancho del 80% del contenedor padre */
-  background: transparent;
+  width: 50%; /* Establece un ancho del 80% del contenedor padre */
+  
+  
 }
 /* Estilo para el contenedor (se repite, pero es innecesario) */
-#container {
-  text-align: center; /* Centra el contenido del contenedor */
-}
+
 /* Estilo para el contenido principal */
 ion-content {
   --background: none; /* Elimina cualquier fondo predeterminado */
@@ -36,14 +35,12 @@ button:hover {
   transform: scale(1.2); /* Aumenta el tamaño del botón en un 20% */
 }
 /* Estilo para el pie de página */
-ion-footer {
-  --background: transparent; /* Establece un fondo transparente */
-}
+
 .my-input {
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 5px;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .my-link {
@@ -75,4 +72,8 @@ ion-footer {
 .highlight {
   color: #000000;
   color: black;
+}
+.my-input {
+  background-color: black;
+  color: rgb(0, 0, 0);
 }
