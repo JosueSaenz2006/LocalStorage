@@ -11,6 +11,7 @@ ion-header {
   text-align: center; /* Centra el contenido del contenedor */
   margin: 0 auto; /* Establece un margen automático */
   width: 80%; /* Establece un ancho del 80% del contenedor padre */
+  background: transparent;
 }
 /* Estilo para el contenedor (se repite, pero es innecesario) */
 #container {
@@ -52,4 +53,22 @@ ion-footer {
 .my-image {
   width: 100%;
   height: auto;
+}
+.color-changing-title {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  animation: color-change 6s ease-in-out infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(255, 0, 0); /* rojo */
+  }
+  50% {
+    color: rgb(0, 255, 0); /* verde */
+  }
+  100% {
+    color: rgb(0, 0, 255); /* azul */
+  }
 }
