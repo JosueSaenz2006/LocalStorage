@@ -15,13 +15,15 @@
     <br><br> <!-- Saltos de línea -->
 
     <div id="container">
-      <ion-label class="highlight">{{recovertext}}</ion-label><!-- Etiqueta para mostrar el texto recuperado de localStorage -->
-    </div> 
-
-    <br><br> <!-- Saltos de línea -->
-
-    <input type="text" [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar" class="my-input"> <!-- Input para ingresar texto a guardar en localStorage -->
-    <br><br> <!-- Saltos de línea -->
+      <ion-label class="highlight">{{recovertext}}</ion-label>
+    </div>
+    
+    <br><br>
+    
+    <input type="text" [(ngModel)]="receivetext" placeholder="Ingrese su texto a guardar" class="my-input">
+    
+    <br><br>
+    
 
     <button class="my-button" (click)="print()">Enviar</button> <!-- Botón para guardar el texto en localStorage -->
  <!-- Estilos en línea -->
